@@ -38,23 +38,18 @@ echo $studentOne->name = "Kabir";
 class Guest {
 
 public $name;
-
 public function greeting(){
-	echo "Hello " . $this->name . "</br>" ;
+	echo "Hello " . $this->name;
 }
 
 }
 
 $guestOne = new Guest;
-
 $guestTwo = new Guest;
 
 $guestOne->name = "Mohsin";
-
 $guestTwo->name = "Sajib"; 
-
 $guestOne->greeting();
-
 $guestTwo->greeting(); 
 
 // Passing argument to a function(method) via object and accessing it
