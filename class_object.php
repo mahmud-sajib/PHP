@@ -2,29 +2,21 @@
 
 <?php
 
-// Basic structure
+// Creating a Class & Object, defining & accesing Properties and Methods (Basic Structure) 
 
 class Person {
-
+	
 public $name = "Arif";
-
 public function hello(){
-
 	echo "Hi, there! ";
-
 }
-
+	
 }
 
 $personOne = new Person;
 
 echo $personOne->name;
-
-echo "</br>";
-
 echo $personOne->hello();
-
-echo "</br>";
 
 // Setting propertie's value through object
 
