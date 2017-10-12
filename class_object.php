@@ -21,22 +21,17 @@ echo $personOne->hello();
 // Setting propertie's value through object
 
 class Student {
-
+	
 public $name;
-
 public function hello(){
-
 	echo "Hi, there!" ;
-
 }
-
+	
 }
 
 $studentOne = new Student;
 
 echo $studentOne->name = "Kabir";
-
-echo "</br>";
 
 // Using $this to access properties
 
