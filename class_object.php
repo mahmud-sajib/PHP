@@ -94,7 +94,3 @@ $playerOne->playerAge("30");
 $playerTwo->playerAge("26");
 
 ?>
-
-	
-</body>
-</html>
