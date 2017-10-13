@@ -6,6 +6,8 @@
 
 2. To extend a Child to a Parent class we write this syntax:- class ChildClass extends ParentClass
 
+3. We can stop inheritance from a Parent Class & Method by putting "Final" keyword before the Class & Method.
+
 */
 
 // Child class inheriting Property & Method from Parent class
