@@ -2,7 +2,7 @@
 
 /*
 
-1. In OOP we write the keyword "const" to define a constant and then write the constant name in CAPITAL WORD.
+1. In OOP we write the keyword "const" to define a constant and then write the constant name in CAPITAL letter.
 
 2. Constant is by default public and they don't need access modifiers.
 
@@ -17,7 +17,6 @@
 class Person  {
 
 const NAME = "Rony";
-
 public function hello(){
 	echo "Hi " .Person::NAME ;
 }
