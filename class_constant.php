@@ -24,6 +24,7 @@ public function hello(){
 }
 
 $personOne = new Person;
+
 $personOne->hello();
 
 ?>
