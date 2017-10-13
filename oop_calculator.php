@@ -1,7 +1,7 @@
 <?php 
-//include "class_project.php";
 
 class Calculator {
+	
 	public function add($a,$b){
 		echo "Summation : " . ($a+$b) . "</br>" ;
 	}
@@ -17,8 +17,8 @@ class Calculator {
 	public function div($a,$b){
 		echo "Division : " . ($a/$b) . "</br>";
 	}
+	
 }
-
 
 ?>
 
