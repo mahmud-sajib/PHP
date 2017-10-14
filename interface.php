@@ -2,7 +2,7 @@
 
 /*
 
-1. Interface are delared with this syntax: inteface ClassName
+1. Interface are declared with this syntax: inteface ClassName
 
 2. It can only contain Public Methods & can't contain Variables(Properties).
 
