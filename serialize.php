@@ -32,7 +32,6 @@ class UserInfo
 $objOne = new UserInfo("United State","Ohio","AWS");
 
 $serialize = serialize($objOne);
-
 echo $serialize;
 
 ?>
