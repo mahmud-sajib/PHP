@@ -1,4 +1,3 @@
-
 <?php
 
 // creating an object of mysqli class and passing parameters to it's constructor for database connection
