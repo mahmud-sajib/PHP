@@ -6,7 +6,6 @@ $pass = "123456";
 
 try {
 	$pdo = new PDO($dsn, $user, $pass);
-
 } catch (PDOException $e) {
 	echo "Connection failed.." . $e->getMessage();
 }
