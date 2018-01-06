@@ -2,6 +2,7 @@
 
 <?php
 
+//loading all the classes from different files
 spl_autoload_register(function($class){
     include "classes/".$class.".php";
 });
@@ -10,16 +11,16 @@ spl_autoload_register(function($class){
 
 <?php
 
+// instantiating an object
 $user = new Student();
 
 ?>
 
-
-
-
 <section class="mainleft">
 
 <?php
+
+// holding field value that needs to be inserted
 
 if (isset($_POST['create'])) {
 
@@ -36,6 +37,8 @@ if (isset($_POST['create'])) {
     }
 
 }
+
+// holding field value that needs to be updated
 
 if (isset($_POST['update'])) {
 
@@ -58,6 +61,8 @@ if (isset($_POST['update'])) {
 
 <?php
 
+// performing delete operation
+
 if (isset($_GET['action']) && $_GET['action'] == 'delete') {
 
     $id = (int)$_GET['id'];
@@ -71,6 +76,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'delete') {
 ?>
 
 <?php
+
+// performing edit operation
 
 if (isset($_GET['action']) && $_GET['action'] == 'edit') {
 
@@ -154,11 +161,13 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit') {
 
     <?php
 
+    // reading all data from database
+
     $i=0;
 
     foreach ($user->readAll() as $key => $value) {
+        // incrementing id no. by 1
         $i++;
-
     ?>
 
     <tr>
@@ -174,12 +183,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit') {
         </td>
     </tr>
 
-
     <?php } ?>
 
-   
-
-    
   </table>
 </section>
 

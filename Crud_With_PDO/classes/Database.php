@@ -6,6 +6,9 @@ class Database
 {
 	
 	private static $pdo;
+
+	// creating a database connection
+
 	public static function connection(){
 
 		if (!isset(self::$pdo)) {
@@ -25,10 +28,13 @@ class Database
 
 	}
 
+	// using PDO prepared statemnet 
+	
 	public static function prepareQuery($sql){
 		return self::connection()->prepare($sql);
 	}
 }
+
 
 
 

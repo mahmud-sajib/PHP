@@ -22,6 +22,8 @@ class Student{
 		$this->age = $iage;
 	}
 
+	// performing inset query
+
 	public function insert(){
 
 		$sql = " INSERT INTO $this->table(name,dept,age) VALUES(:name,:dept,:age) ";
@@ -35,6 +37,8 @@ class Student{
 		return $stmt->execute();
 
 	}
+
+	// performing read query through id
 
 	public function readById($id){
 
@@ -51,6 +55,8 @@ class Student{
 
 	}
 
+	// performing update query
+
 	public function update($id){
 
 		$sql = "UPDATE $this->table SET name=:name, dept=:dept, age=:age WHERE id=:id";
@@ -66,7 +72,7 @@ class Student{
 
 	}
 
-	
+	// performing read query
 	
 	public function readAll(){
 
@@ -79,6 +85,8 @@ class Student{
 		return $stmt->fetchAll();
 
 	}
+
+	// performing delete query
 
 	public function delete($id){
 
