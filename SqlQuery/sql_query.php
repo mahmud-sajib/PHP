@@ -78,8 +78,5 @@ SELECT * FROM customers ORDER by name ASC;
 
 SELECT DISTINCT city FROM customers;
 
-SELECT * FROM `customers` WHERE id = 1;
-
 ?>
 
-SELECT * FROM `customers` WHERE id = 1;
