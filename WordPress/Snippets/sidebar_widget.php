@@ -16,4 +16,10 @@ function sr_sidebar_widgets(){
 
 add_action('widgets_init', 'sr_sidebar_widgets');
 
+// to show the sidebar content on front end
+
+if (is_active_sidebar('sr_right_sidebar')) {
+    dynamic_sidebar('sr_right_sidebar');
+}
+
 ?>
