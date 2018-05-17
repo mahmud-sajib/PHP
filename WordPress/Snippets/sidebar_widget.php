@@ -8,9 +8,9 @@ function sr_sidebar_widgets(){
         'id'            => 'sr_right_sidebar',
         'description'   => __( 'Sidebar widgets to be placed', 'textDomain' ),
         'before_widget' => '<div class="col-12">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="title">',
-		'after_title'   => '</div>'
+        'after_widget'  => '</div>',
+	'before_title'  => '<div class="title">',
+	'after_title'   => '</div>'
     ) );
 }
 
